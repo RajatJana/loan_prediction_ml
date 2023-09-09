@@ -11,10 +11,10 @@ from PIL import Image
 import pickle
 
 
-model = pickle.load(open('C:\\Users\\RAJAT JANA\\Desktop\\Bank Loan Prediction\\ML_Model1.sav', 'rb'))
+model = pickle.load(open('ML_Model1.sav', 'rb'))
 
 def run():
-    img1 = Image.open('C:\\Users\\RAJAT JANA\\Desktop\\Bank Loan Prediction\\logo.png')
+    img1 = Image.open('logo.png')
     img1 = img1.resize((156,145))
     st.image(img1,use_column_width=False)
     st.title("Bank Loan Prediction using Machine Learning")
