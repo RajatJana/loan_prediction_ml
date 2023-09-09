@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import pickle
+import sklearn
 
 
 model = pickle.load(open('ML_Model1.pkl', 'rb'))
