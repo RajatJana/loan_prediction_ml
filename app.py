@@ -61,16 +61,16 @@ def run():
       cred_display = ('Between 300 to 500','Above 500')
       cred_options = list(range(len(cred_display)))
       cred = st.selectbox("Credit Score",cred_options, format_func=lambda x: cred_display[x])
-    with col3:
+    with col4:
       ## Applicant Monthly Income
       mon_income = st.number_input("Applicant's Monthly Income($)",value=0)
-    with col3:
+    with col4:
       ## Co-Applicant Monthly Income
       co_mon_income = st.number_input("Co-Applicant's Monthly Income($)",value=0)
-    with col4:
+    with col3:
       ## Loan AMount
       loan_amt = st.number_input("Loan Amount",value=0)
-    with col4:
+    with col3:
       ## loan duration
       dur_display = ['2 Month','6 Month','8 Month','1 Year','16 Month']
       dur_options = range(len(dur_display))
